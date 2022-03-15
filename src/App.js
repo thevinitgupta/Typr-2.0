@@ -1,11 +1,10 @@
 import './App.css';
+import Landing from './Components/Landing'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        Typr 2.0
-      </header>
+        <Landing/>
     </div>
   );
 }
