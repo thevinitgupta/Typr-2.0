@@ -18,7 +18,7 @@
 .landing-head {
     width: 100%;
     font-size: 5.5rem;
-    color: aqua;
+    color: var(--header-light);
     font-weight: 500;
     font-family: 'Audiowide', cursive;
     text-align: center;
@@ -27,7 +27,7 @@
 .landing-subhead{
     font-family: 'PT Sans Caption', sans-serif;
     font-size: 2rem;
-    color: aliceblue;
+    color: var(--subhead-light);
 }
 .landing-desc{
     opacity: 0;
@@ -37,7 +37,7 @@
 .landing-desc-text{
     font-size: 1.4rem;
     font-family: 'PT Sans Caption', sans-serif;
-    color: darksalmon;
+    color: var(--display-light);
 }
 @keyframes shift-up {
     0%{

@@ -1,4 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=JetBrains+Mono&family=PT+Sans+Caption&display=swap');
+
+:root{
+  --background-dark: #141E27;
+  --background-light : #EEEDDE;
+  --header-light : #19282F;
+  --header-dark : #95CD41;
+  --subhead-light : #454c50;
+  --subhead-dark :  #a2cf5e;
+  --display-dark : #7ECA9C;
+  --display-light : #00917C;
+  --button-light : #EC4646;
+  --button-dark : #54E346;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
