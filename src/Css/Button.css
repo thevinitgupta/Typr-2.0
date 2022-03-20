@@ -1,0 +1,34 @@
+.Button{
+    /* background-color: var(--button-light); */
+    color: var(--background-light);
+    width: 120px;
+    height: 30px;
+    padding: 2%;
+    font-weight: 600;
+    font-size: 1.2rem;
+    border-radius: 2px;
+    margin-top: 5%;
+    transition: all 200ms ease-in-out;
+}
+.Button-primary{
+    background-color: var(--button-light-primary);
+}
+.Button-secondary{
+    background-color: var(--button-light-secondary);
+}
+.Button:hover{
+    cursor: pointer;
+    box-shadow: none;
+}
+.Button-primary:hover{
+    transform: scale(1.04);
+    -webkit-box-shadow: 4px 4px 40px -13px var(--button-light-primary);
+    -moz-box-shadow: 4px 4px 40px -13px var(--button-light-primary);
+    box-shadow: 4px 4px 40px -13px var(--button-light-primary);
+}
+.Button-secondary:hover{
+    transform: scale(1.04);
+    -webkit-box-shadow: 4px 4px 40px -13px var(--button-light-secondary);
+    -moz-box-shadow: 4px 4px 40px -13px var(--button-light-secondary);
+    box-shadow: 4px 4px 40px -13px var(--button-light-secondary);
+}

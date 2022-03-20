@@ -4,13 +4,15 @@
   --background-dark: #141E27;
   --background-light : #EEEDDE;
   --header-light : #19282F;
-  --header-dark : #95CD41;
+  --header-dark : #e0e0e2;
   --subhead-light : #454c50;
-  --subhead-dark :  #a2cf5e;
-  --display-dark : #7ECA9C;
-  --display-light : #00917C;
-  --button-light : #EC4646;
-  --button-dark : #54E346;
+  --subhead-dark :  #f7faf3;
+  --display-dark : #40eec8;
+  --display-light : #153E90;
+  --button-light-primary : #15a06b;
+  --button-dark-primary : #54E346;
+  --button-light-secondary : #F0A500;
+  --button-dark-secondary : #F9D56E;
 }
 
 body {

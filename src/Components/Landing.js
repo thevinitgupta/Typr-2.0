@@ -1,5 +1,6 @@
 import React from 'react'
 import '../Css/Landing.css'
+import Button from "./Button"
 
 function Landing() {
   return (
@@ -13,6 +14,10 @@ function Landing() {
         <div className='landing-desc'>
             <div className='landing-desc-text'>
                 Join and challenge your friends for a Battle Royale...
+            </div>
+            <div className='landing-desc-buttons'>
+              <Button text='Login' subclass='primary'/>
+              <Button text='Sign Up' subclass='secondary'/>
             </div>
         </div>
     </div>
