@@ -13,13 +13,17 @@
     width: 100%;
     position: absolute;
     bottom: 10%;
-    animation: shift-up 2.5s 2s forwards;
+    animation: shift-up 2.5s 3.1s forwards;
 }
 .landing-head {
     width: 100%;
     font-size: 5.5rem;
-    color: var(--header-light);
-    font-weight: 500;
+    color: var(--background-light);
+    display: flex;
+    justify-content: center;
+    outline: none;
+    font-weight: 600;
+    letter-spacing: 5px;
     font-family: 'Audiowide', cursive;
     text-align: center;
     /* position: absolute; */
@@ -32,7 +36,7 @@
 .landing-desc{
     opacity: 0;
     transform: scale(0.7);
-    animation: fade-in 2s 4.7s forwards;
+    animation: fade-in 2s 5s forwards;
     display: flex;
     flex-direction: column;
 
@@ -49,6 +53,9 @@
     position: relative;
     overflow-x: hidden;
     overflow-y:inherit;
+}
+.space{
+    width: 2rem;
 }
 
 @keyframes shift-up {

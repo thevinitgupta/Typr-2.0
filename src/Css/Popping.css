@@ -1,0 +1,16 @@
+.Popping>span{
+    text-shadow:  none;
+}
+.popped>span{
+    animation: pop 200ms forwards;
+}
+@keyframes pop {
+    0%{
+        text-shadow: none;
+    }
+    100%{
+        text-shadow:  6px 6px 14px #c1c0b4,
+        -6px -6px 14px #ffffff;
+
+    }
+}

@@ -1,15 +1,19 @@
 import React from 'react'
 import '../Css/Landing.css'
 import Button from "./Button"
+import Popping from './Popping';
 
 function Landing() {
+  const headText = "Typr_2.0";
   return (
     <div className='landing'>
         <div className='typed'>
-            <div className='landing-head'>Typr 2.0</div>
-            <div className='landing-subhead'>
-            Your arena to type
-        </div>
+            <div className='landing-head'>
+              {headText.split("").map((text,index)=>{
+                if(text==='_') return <span key={index} delay={index+3} className='space'></span>;
+                return <Popping key={index} delay={index} text={text}/>;
+              })}
+            </div>
         </div>
         <div className='landing-desc'>
             <div className='landing-desc-text'>
