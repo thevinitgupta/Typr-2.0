@@ -32,3 +32,35 @@
     -moz-box-shadow: 4px 4px 40px -13px var(--button-light-secondary);
     box-shadow: 4px 4px 40px -13px var(--button-light-secondary);
 }
+.Button-left-slide-in{
+    margin-top: 0;
+    top: 0;
+    position: absolute;
+    left: -30%;
+    animation: left-slide-in 200ms 7.02s forwards;
+}
+
+.Button-right-slide-in{
+    margin-top: 0;
+    top: 0;
+    position: absolute;
+    right: -30%;
+    animation: right-slide-in 200ms 7.02s forwards;
+}
+
+@keyframes left-slide-in {
+    0%{
+        left: -30%;
+    }
+    100%{
+        left: 20%;
+    }
+}
+@keyframes right-slide-in {
+    0%{
+        right: -30%;
+    }
+    100%{
+        right: 20%;
+    }
+}
