@@ -7,7 +7,7 @@ useEffect(() => {
   setInterval(() => {
     setSetClassName("Popping popped");
   }, 350*delay);
-}, []);
+}, [delay]);
 
     return (<>
       <div  className={className}>

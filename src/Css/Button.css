@@ -1,66 +1,72 @@
 .Button{
-    /* background-color: var(--button-light); */
-    color: var(--background-light);
+    background: #EEEDDE;
+    color: transparent;
     width: 120px;
     height: 30px;
     padding: 2%;
     font-weight: 600;
     font-size: 1.2rem;
-    border-radius: 2px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 5%;
+    animation: popup 200ms 7.02s forwards;
     transition: all 200ms ease-in-out;
+    outline: none;
 }
-.Button-primary{
-    background-color: var(--button-light-primary);
+
+
+
+@keyframes popup {
+    0%{
+        box-shadow: none;
+        color: transparent;
+    }
+    100% {
+        color: var(--display-light);
+        background: linear-gradient(145deg, #fffeee, #d6d5c8);
+        box-shadow:  6px 6px 20px #c1c0b4,
+             -6px -6px 20px #ffffff;
+    }
 }
-.Button-secondary{
-    background-color: var(--button-light-secondary);
+
+.Button-clicked{
+    width: 120px;
+    height: 30px;
+    padding: 2%;
+    font-weight: 600;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    background: #EEEDDE;
+    color: var(--button-dark-primary);
+    box-shadow: inset 6px 6px 20px #c1c0b4,
+            inset -6px -6px 20px #ffffff;
+    text-shadow: 1px 1px 5px -2px var(--button-dark-primary);
+    outline: none;
 }
-.Button:hover{
+.Button-Unclicked{
+    width: 120px;
+    height: 30px;
+    padding: 2%;
+    font-weight: 600;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    color: var(--display-light);
+        background: linear-gradient(145deg, #fffeee, #d6d5c8);
+        box-shadow:  6px 6px 20px #c1c0b4,
+             -6px -6px 20px #ffffff;
+    transition: all 200ms ease-in-out;
+    outline: none;
+}
+.Button,.Button-Unclicked:hover{
     cursor: pointer;
-    box-shadow: none;
-}
-.Button-primary:hover{
-    transform: scale(1.04);
-    -webkit-box-shadow: 4px 4px 40px -13px var(--button-light-primary);
-    -moz-box-shadow: 4px 4px 40px -13px var(--button-light-primary);
-    box-shadow: 4px 4px 40px -13px var(--button-light-primary);
-}
-.Button-secondary:hover{
-    transform: scale(1.04);
-    -webkit-box-shadow: 4px 4px 40px -13px var(--button-light-secondary);
-    -moz-box-shadow: 4px 4px 40px -13px var(--button-light-secondary);
-    box-shadow: 4px 4px 40px -13px var(--button-light-secondary);
-}
-.Button-left-slide-in{
-    margin-top: 0;
-    top: 0;
-    position: absolute;
-    left: -30%;
-    animation: left-slide-in 200ms 7.02s forwards;
-}
-
-.Button-right-slide-in{
-    margin-top: 0;
-    top: 0;
-    position: absolute;
-    right: -30%;
-    animation: right-slide-in 200ms 7.02s forwards;
-}
-
-@keyframes left-slide-in {
-    0%{
-        left: -30%;
-    }
-    100%{
-        left: 20%;
-    }
-}
-@keyframes right-slide-in {
-    0%{
-        right: -30%;
-    }
-    100%{
-        right: 20%;
-    }
 }

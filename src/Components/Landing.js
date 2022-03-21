@@ -17,7 +17,7 @@ function Landing() {
         </div>
         <div className='landing-desc'>
             <div className='landing-desc-text'>
-                Join and challenge your friends for a Battle Royale...
+                Join and challenge your friends for a Battle Royale
             </div>
             <div className='landing-desc-buttons'>
               <Button text='Login' subclass='primary Button-left-slide-in'/>
