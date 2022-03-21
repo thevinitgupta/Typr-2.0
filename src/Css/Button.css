@@ -1,4 +1,5 @@
 .Button{
+    user-select: none;
     background: #EEEDDE;
     color: transparent;
     width: 120px;
@@ -11,7 +12,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 5%;
-    animation: popup 200ms 7.02s forwards;
+    animation: popup 700ms 7.02s forwards;
     transition: all 200ms ease-in-out;
     outline: none;
 }
@@ -32,6 +33,7 @@
 }
 
 .Button-clicked{
+    user-select: none;
     width: 120px;
     height: 30px;
     padding: 2%;
@@ -46,7 +48,8 @@
     color: var(--button-dark-primary);
     box-shadow: inset 6px 6px 20px #c1c0b4,
             inset -6px -6px 20px #ffffff;
-    text-shadow: 1px 1px 5px -2px var(--button-dark-primary);
+    text-shadow: 1px 1px 5px 1px #6ffa62;
+    transition: all 200ms ease-in-out;
     outline: none;
 }
 .Button-Unclicked{
@@ -56,17 +59,18 @@
     font-weight: 600;
     font-size: 1.2rem;
     border-radius: 5px;
+    user-select: none;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 5%;
     color: var(--display-light);
-        background: linear-gradient(145deg, #fffeee, #d6d5c8);
-        box-shadow:  6px 6px 20px #c1c0b4,
+    background: linear-gradient(145deg, #fffeee, #d6d5c8);
+    box-shadow:  6px 6px 20px #c1c0b4,
              -6px -6px 20px #ffffff;
     transition: all 200ms ease-in-out;
     outline: none;
 }
-.Button,.Button-Unclicked:hover{
+.Button,.Button-clicked,.Button-Unclicked:hover{
     cursor: pointer;
 }

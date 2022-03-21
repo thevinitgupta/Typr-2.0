@@ -20,8 +20,9 @@ function Landing() {
                 Join and challenge your friends for a Battle Royale
             </div>
             <div className='landing-desc-buttons'>
-              <Button text='Login' subclass='primary Button-left-slide-in'/>
-              <Button className='landing-signup' text='Sign Up' subclass='secondary  Button-right-slide-in'/>
+              <Button text='Login'/>
+              <Button text='Sign Up'/>
+              <Button text='Typr'/>
             </div>
         </div>
     </div>

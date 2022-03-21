@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import "../Css/Button.css"
 
-function Button({text, subclass}) {
+function Button({text}) {
   const [buttonClass, setButtonClass] = useState('Button');
   return (
     <div onClick={(event)=>{
@@ -9,7 +9,7 @@ function Button({text, subclass}) {
       setButtonClass('Button-clicked');
       setTimeout(()=>{
           setButtonClass('Button-Unclicked')
-      },150)
+      },200)
       console.log(buttonClass)
     }} className={buttonClass}>
         <span>{text}</span>
