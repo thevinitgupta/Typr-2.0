@@ -9,8 +9,7 @@
         text-shadow: none;
     }
     100%{
-        text-shadow:  6px 6px 14px #c1c0b4,
-        -6px -6px 14px #ffffff;
-
+        text-shadow:  9px 9px 18px #797971,
+        -9px -9px 18px #ffffff;
     }
 }
