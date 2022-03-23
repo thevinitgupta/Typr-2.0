@@ -45,7 +45,7 @@
     align-items: center;
     margin-top: 5%;
     background: #EEEDDE;
-    color: var(--button-dark-primary);
+    /* color: var(--button-dark-primary); */
     box-shadow: inset 6px 6px 20px #c1c0b4,
             inset -6px -6px 20px #ffffff;
     text-shadow: 1px 1px 5px 1px #6ffa62;

@@ -20,9 +20,9 @@ function Landing() {
                 Join and challenge your friends for a Battle Royale
             </div>
             <div className='landing-desc-buttons'>
-              <Button text='Login'/>
-              <Button text='Sign Up'/>
-              <Button text='Typr'/>
+              <Button text='Login' light="#6ffa62"/>
+              <Button text='Sign Up' light="#9fff00"/>
+              <Button text='Typr' light="#ffd900" />
             </div>
         </div>
     </div>
