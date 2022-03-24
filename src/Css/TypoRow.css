@@ -1,0 +1,10 @@
+.TypoRow{
+    flex: 0.14;
+    width: 100%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}

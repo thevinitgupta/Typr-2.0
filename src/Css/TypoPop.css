@@ -1,0 +1,46 @@
+.TypoPop{
+    flex : 0.1;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: var(--display-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    color: var(--background-light);
+    background-color: var(--background-light);
+    box-shadow: none;
+}
+.TypoPop-popped{
+    color: var(--background-light);
+    animation: popped 5s 8s forwards;
+}
+@keyframes popped {
+    0%{
+        color: var(--background-light);
+        background-color: var(--background-light);
+        box-shadow: none;
+    }
+    30%{
+        color: #000;
+        background: linear-gradient(145deg, #d6d5c8, #fffeee);
+        box-shadow:  9px 9px 18px #797971,
+        -9px -9px 18px #ffffff;
+    }
+    70%{
+        color: #000;
+        /* color: var(--display-light); */
+        background: linear-gradient(145deg, #d6d5c8, #fffeee);
+        box-shadow:  9px 9px 18px #797971,
+                    -9px -9px 18px #ffffff;
+    }
+    100%{
+        color: var(--background-light);
+        background-color: var(--background-light);
+        box-shadow: none;
+    }
+}
