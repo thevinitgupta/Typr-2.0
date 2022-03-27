@@ -5,7 +5,6 @@ import "../Css/TypoRow.css"
 
 function TypoRow({rowText,hide}) {
   const column = randomize(0,rowText.length);
-  console.log(rowText, hide)
   return (
     <div className='TypoRow'>
         {hide===false ? rowText.split("").map((text,index)=>{

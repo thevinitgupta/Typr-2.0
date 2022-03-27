@@ -1,6 +1,8 @@
 .TypoPop{
-    flex : 0.05;
-    height: 60%;
+    flex : 0.06;
+    height: 75%;
+    min-width: 80px;
+    min-height: 80px;
     margin: 0;
     padding: 0;
     color: var(--display-light);
@@ -20,7 +22,7 @@
     border-radius: 10px;
     z-index: 3;
     color: var(--background-light);
-    animation: popped 3.7s 8s forwards;
+    animation: popped 3s 100ms forwards;
 }
 @keyframes popped {
     0%{
@@ -38,8 +40,9 @@
     80%{
         color: var(--display-dark);
         text-shadow: 2px 1px 4px #41ffd6;
-        box-shadow: inset 10px 10px 22px #a4a499,
-            inset -10px -10px 22px #ffffff;
+        box-shadow: inset 10px 10px 22px #cdccbf,
+            inset -10px -10px 22px #fffffd;
+
     }
     100%{
         color: var(--background-light);
