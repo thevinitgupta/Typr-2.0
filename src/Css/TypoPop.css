@@ -5,49 +5,73 @@
     min-height: 80px;
     margin: 0;
     padding: 0;
-    color: var(--display-light);
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
     font-weight: 600;
-    border: none;
-    color: var(--background-light);
+    border-radius: 10px;
+    z-index: 3;
+    color: var(--display-light);
+    text-shadow: none;
     background-color: var(--background-light);
-    box-shadow: none;
+    box-shadow:  10px 10px 23px #d9d8ca,
+            -10px -10px 23px #fffff2;
+    transition: all 200ms ease-in-out;
     position: relative;
     z-index: 1;
 }
-.TypoPop-popped{
-    border-radius: 10px;
-    z-index: 3;
-    color: var(--background-light);
-    animation: popped 3s 100ms forwards;
-}
-@keyframes popped {
+/* .TypoPop-popped{
+    
+} */
+/* @keyframes popped {
     0%{
-        color: var(--background-light);
-        text-shadow: none;
-        background-color: var(--background-light);
-        box-shadow: none;
-    }
-    30%{
         color: var(--display-light);
         text-shadow: none;
-        box-shadow:  10px 10px 22px #a4a499,
-             -10px -10px 22px #ffffff;
+        background-color: var(--background-light);
+        box-shadow:  10px 10px 23px #d9d8ca,
+             -10px -10px 23px #fffff2;
     }
-    80%{
+    91%{
+        color: var(--display-light);
+        text-shadow: none;
+        background-color: var(--background-light);
+        box-shadow:  10px 10px 23px #d9d8ca,
+             -10px -10px 23px #fffff2;
+    }
+    92%{
         color: var(--display-dark);
         text-shadow: 2px 1px 4px #41ffd6;
         box-shadow: inset 10px 10px 22px #cdccbf,
             inset -10px -10px 22px #fffffd;
 
     }
+    96%{
+        color: var(--display-dark);
+        text-shadow: 2px 1px 4px #41ffd6;
+        box-shadow: inset 10px 10px 22px #cdccbf,
+            inset -10px -10px 22px #fffffd;
+    }
     100%{
-        color: var(--background-light);
+        color: var(--display-light);
         text-shadow: none;
         background-color: var(--background-light);
-        box-shadow: none;
+        box-shadow:  10px 10px 23px #d9d8ca,
+             -10px -10px 23px #fffff2;
     }
+} */
+.TypoPop-clicked{
+    color: var(--display-dark);
+    text-shadow: 2px 1px 4px #41ffd6;
+    box-shadow: inset 10px 10px 22px #cdccbf,
+        inset -10px -10px 22px #fffffd;
+}
+.TypoPop-hide{
+    border: none;
+    z-index: 0;
+    border-radius: none;
+    color: var(--background-light);
+    background-color: var(--background-light);
+    box-shadow: none;
+    animation: none;
 }

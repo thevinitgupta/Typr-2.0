@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React from 'react'
 import '../Css/Landing.css'
 import randomize from '../Directives/Randomize';
 import Button from "./Button"
@@ -7,25 +7,20 @@ import Typo from './Typo';
 
 function Landing() {
   const headText = "Typr_2.0";
-  const [row, setRow] = useState(null);
-  useEffect(() => {
-    const timerId = setInterval(()=>{
-        let randRow = randomize(0,6);
-        while(randRow>1 && randRow<4){
-          setRow(()=>{
-            return null;
-          })
-          randRow = randomize(0,6);
-        }
-        setRow(randRow);
-    }, 2000);
-    return ()=>{
-      clearInterval(timerId)
+  // const [row, setRow] = useState(null);
+  const rowSet = [];
+  let randRow = randomize(0,6);
+  rowSet.push(randRow)
+  while(rowSet.length<4){
+    randRow = randomize(0,6);
+    while(randRow>1 && randRow<4){
+      randRow = randomize(0,6);
     }
-  },[])
+    rowSet.push(randRow)
+  }
   return (
     <div className='landing'>
-      {row!=null && <Typo row={row}/>}
+      {rowSet.length>=4 && <Typo rowSet={rowSet}/>}
       <div className='landing-body'>
       <div className='typed'>
           <div className='landing-head'>
